@@ -183,6 +183,22 @@ func printCells() {
 	for i := 0; i < m_size; i++ {
 		fmt.Println(cells[i])
 	}
+	for i := 0; i < m_size; i++ {
+		for j := 0; j < m_size; j++ {
+			if Generate_Randnum(m_size) > 5 {
+				// fmt.Print(cells[i][j], " ")
+				cells[i][j] = 0
+			} else {
+				// fmt.Println("0", " ")
+			}
+
+		}
+		// fmt.Println("")
+	}
+	fmt.Println("--------------")
+	for i := 0; i < m_size; i++ {
+		fmt.Println(cells[i])
+	}
 }
 
 func main() {
